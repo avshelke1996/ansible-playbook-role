@@ -17,7 +17,7 @@ pipeline{
         stage('build'){
             steps{
             
-                sh 'ansible-playbook usingcompose1.yaml'
+                sh 'ansible-playbook usingcompose.yaml'
             }
         }
         stage('test'){
