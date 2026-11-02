@@ -1,0 +1,7 @@
+- name: install docker
+    action: dnf name="{{pkg}}" state=present
+    notify:
+     - clonning_git_repo
+     - create_bridge_network
+     - create_container_with_our_network
+     - copying_file_to_tomcat_webapps
