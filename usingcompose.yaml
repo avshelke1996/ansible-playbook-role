@@ -1,0 +1,12 @@
+---
+
+# hosts
+- hosts: devlinux
+  user: avi
+  become: yes
+  connection: ssh
+  gather_facts: yes
+  
+  roles:
+  - http-role
+    
