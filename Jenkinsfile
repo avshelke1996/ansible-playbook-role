@@ -16,7 +16,8 @@ pipeline{
         }
         stage('build'){
             steps{
-            
+            	sh 'pwd'
+				sh 'whoami'
                 sh 'ansible-playbook usingcompose.yaml'
             }
         }
